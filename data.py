@@ -66,5 +66,7 @@ data['is_weekend'] = data['is_weekend'].astype('category')
 data['incident_hour_bucket'] = pd.cut(data['incident_hour_of_the_day'], bins=[-1, 6, 12, 18, 24], labels=['Night', 'Morning', 'Afternoon', 'Evening'])
 data['incident_hour_bucket'] = data['incident_hour_bucket'].astype('category')
 
-print(data.head())
-print(data.dtypes)
+# print(data.head())
+# print(data.dtypes)
+
+data.to_csv('clean_data.csv', index=False)
