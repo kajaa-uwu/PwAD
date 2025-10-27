@@ -69,4 +69,4 @@ data['incident_hour_bucket'] = data['incident_hour_bucket'].astype('category')
 # print(data.head())
 # print(data.dtypes)
 
-data.to_csv('clean_data.csv', index=False)
+data.to_pickle('clean_data.pkl')
